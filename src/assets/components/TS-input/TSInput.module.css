@@ -1,0 +1,39 @@
+.TSInput{}
+
+.ShowBox{
+    cursor: pointer;
+}
+
+.InputBox{}
+
+.ShowText{
+    border: 5px solid rgb(241, 205, 205);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: rgb(241, 205, 205);
+    position: relative;
+    clip-path: circle(100%);
+}
+
+.ShowText::first-letter{
+    font-size: xxx-large;
+}
+
+.TransShowText{
+    display: inline-block;
+    position: absolute;
+    background-color: #f1cdcd;
+    top: -2%;
+    bottom: -2%;
+    left: -2%;
+    right: -2%;
+    /* border: none; */
+    clip-path: circle(0%);
+    transition: clip-path 0.5s;
+    color: #282c34;
+    box-shadow: 0px 0px 21px 6px #f1cdcd;
+}
+
+.ShowText:hover>.TransShowText {
+    clip-path: circle(100%);
+}

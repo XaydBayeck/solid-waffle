@@ -1,27 +1,18 @@
-import type { Component } from 'solid-js';
+import { Component, createMemo, createSignal, JSXElement } from "solid-js"
 
-import logo from './logo.svg';
-import styles from './App.module.css';
+import styles from "./App.module.css"
+import TSInputString from "./assets/components/TS-input/TSInputString"
 
 const App: Component = () => {
+  const [data, setData] = createSignal("Jack")
+
   return (
     <div class={styles.App}>
       <header class={styles.header}>
-        <img src={logo} class={styles.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
+        <TSInputString data={data()} onClick={(e: string) => setData(e)} />
       </header>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
