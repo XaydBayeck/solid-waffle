@@ -1,0 +1,25 @@
+.InputGroup {}
+
+.Input {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: large;
+    color: #f1cdcd;
+    border-bottom: 2px solid #f1cdcd;
+    border-right: 2px solid #f1cdcd;
+    border-radius: 0.5em;
+    box-shadow: 4px 4px 20px 6px black inset;
+    /* width: 10em; */
+}
+
+.ReturnBottun {
+    cursor: pointer;
+    color: #282c34;
+    text-shadow: 2px 4px 2px #f1cdcd,
+                 0px 0px 6px #f1cdcdee;
+}
+
+.Submit {}

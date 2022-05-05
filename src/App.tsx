@@ -1,7 +1,7 @@
-import { Component, createMemo, createSignal, JSXElement } from "solid-js"
+import { Component, createSignal } from "solid-js"
 
 import styles from "./App.module.css"
-import TSInputString from "./assets/components/TS-input/TSInputString"
+import TSInputString from "./components/TS-input/TSInputString"
 
 const App: Component = () => {
   const [data, setData] = createSignal("Jack")

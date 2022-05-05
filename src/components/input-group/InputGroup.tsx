@@ -14,7 +14,7 @@ export default function InputGroup(props: {
 }) {
   return (
     <div class={styles.InputGroup}>
-      <span onclick={props.back}>◀</span>
+      <span class={styles.ReturnBottun} onclick={props.back}>◀</span>
       <input
         class={styles.Input}
         type={props.type || "text"}
