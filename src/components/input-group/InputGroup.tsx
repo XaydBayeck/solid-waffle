@@ -1,20 +1,22 @@
-import styles from "./InputGroup.module.css"
+import styles from "./InputGroup.module.css";
 
 export default function InputGroup(props: {
-  type?: string
-  back: () => void
-  value?: string
+  type?: string;
+  back: () => void;
+  value?: string;
   onInput?: (
     e: InputEvent & {
-      currentTarget: HTMLInputElement
-      target: Element
+      currentTarget: HTMLInputElement;
+      target: Element;
     }
-  ) => void
-  submit: () => void
+  ) => void;
+  submit: () => void;
 }) {
   return (
     <div class={styles.InputGroup}>
-      <span class={styles.ReturnBottun} onclick={props.back}>◀</span>
+      <span class={styles.ReturnBottun} onclick={props.back}>
+        ◀
+      </span>
       <input
         class={styles.Input}
         type={props.type || "text"}
@@ -25,5 +27,5 @@ export default function InputGroup(props: {
         提交
       </button>
     </div>
-  )
+  );
 }

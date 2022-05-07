@@ -1,4 +1,7 @@
-.InputGroup {}
+.InputGroup {
+    display: flex;
+    align-items: center;
+}
 
 .Input {
     margin: 10px;
@@ -15,11 +18,33 @@
     /* width: 10em; */
 }
 
+.Input:focus-visible {
+    outline: 2px solid #f1cdcd;
+}
+
 .ReturnBottun {
+    margin: 4px;
     cursor: pointer;
+    text-align: center;
     color: #282c34;
     text-shadow: 2px 4px 2px #f1cdcd,
                  0px 0px 6px #f1cdcdee;
+    transition: color 0.5s, text-shadow 0.5s;
 }
 
-.Submit {}
+.ReturnBottun:hover {
+    color: #f1cdcd;
+    text-shadow: 0px 0px 2px #f1cdcd,
+                 0px 0px 6px #f1cdcdee;
+}
+
+.Submit {
+    margin: 4px;
+    padding: 2%;
+    background-color: #f1cdcd;
+    border: none;
+    border-radius: 0.5em;
+    font-size: large;
+    width: 60px;
+    cursor: pointer;
+}
